@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Three Columns</title>
+    </head>
+        <style>
+            body{
+                margin: 50;
+            }
+            .container {
+                display: flex;
+                flex-direction: row;
+                height: 500px;
+                /* Using a fixed height will create a column layout*/
+                height: 700px;
+            }
+            .column {
+                /*Flex grow is for the parent containter- will evenly distribute the columns*/
+                flex-grow: 1;
+                /*each element in the column is also a container, we need to center the number*/
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .red {
+                background-color: crimson;
+            }
+            .blue {background-color: darkblue;
+            }
+            .yellow {
+                background-color: gold;
+            }
+            .number {
+                font-size: 75px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="red column">
+                <div class="number">Uno</div>
+            </div>
+            <div class="blue column">
+                <div class="number">Dos</div>
+            </div>
+            <div class="yellow column">
+                <div class="number">Tres</div>
+        </div>
+
+        </div>
+    </body>
+
+</html>
